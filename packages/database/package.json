@@ -1,0 +1,21 @@
+{
+  "name": "@commerce-os-ai/database",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:seed": "ts-node seed.ts",
+    "lint": "echo 'lint database'",
+    "test": "echo 'no tests yet'",
+    "format": "echo 'format database'"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.20.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.20.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
