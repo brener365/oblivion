@@ -98,6 +98,27 @@ Inclui modelagem multi-tenant para:
 - Alerts / Automation Rules
 - Audit logs
 
+
+## Como usar o sistema
+
+Consulte o guia operacional completo em **`docs/how-to-use.md`** com:
+
+- setup local passo a passo
+- comandos `curl` para todos os módulos principais
+- fluxo recomendado de operação comercial
+- orientação de multi-tenant com `x-tenant-id`
+
+Resumo rápido:
+
+```bash
+cd infra/docker && docker compose up -d
+pnpm install
+pnpm --filter @commerce-os-ai/api dev
+pnpm --filter @commerce-os-ai/web dev
+```
+
+Depois execute os endpoints de validação em `docs/how-to-use.md`.
+
 ## Rodando localmente
 
 ```bash
